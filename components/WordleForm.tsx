@@ -9,7 +9,7 @@ export default function WordleForm() {
   const [badLetters, setBadLetters] = useState("");
   const [potentialWords, setPotentialWords] = useState<Array<string>>([]);
 
-  function handleSubmit(event) {
+  function handleSubmit(event: any) {
     event.preventDefault();
 
     const newPotentialWords: string[] = [];
@@ -55,7 +55,7 @@ export default function WordleForm() {
             <label htmlFor="knownLetters">
               Best Guess{' '}
               <div className={styles.tooltip}>?
-                <span className={styles.tooltipText}>Use lowercase for green letters from your Wordle guess. Use uppercase "X" for gray letters.</span>
+                <span className={styles.tooltipText}>Use lowercase for green letters from your Wordle guess. Use uppercase {`"X"`} for gray letters.</span>
               </div>
             </label>
           </div>
