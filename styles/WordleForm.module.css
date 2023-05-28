@@ -36,6 +36,11 @@
   color: #FFFFFF;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   padding: 10px 20px; /* adjust as needed */
   font-size: 20px; /* adjust as needed */

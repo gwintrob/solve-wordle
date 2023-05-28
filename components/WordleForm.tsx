@@ -118,12 +118,14 @@ export default function WordleForm() {
           ))}
         </div>
       ))}
-      <button
-        disabled={guesses[currentRow].map(({letter}) => letter).join('').length !== 0}
-        className={styles.button}
-        onClick={handleSubmit}>
-          Guess
-      </button>
+      <div className={styles.buttonContainer}>
+        <button
+          disabled={guesses[currentRow].map(({letter}) => letter).join('').length !== 0}
+          className={styles.button}
+          onClick={handleSubmit}>
+            Guess
+        </button>
+      </div>
     </div>
   )
 }

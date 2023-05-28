@@ -6,14 +6,14 @@ function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Solve Wordle</title>
-        <meta name="description" content="Solve your favorite daily puzzle" />
+        <title>Beat Wordle</title>
+        <meta name="description" content="Beat your favorite daily puzzle" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Solve Wordle
+          Beat Wordle
         </h1>
 
         <WordleForm />
