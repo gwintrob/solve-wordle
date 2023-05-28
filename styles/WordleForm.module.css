@@ -1,69 +1,43 @@
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  margin-bottom: 2px;
+.wordListContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 300px; /* adjust as needed */
+  margin-bottom: 20px; /* adjust as needed */
 }
 
-.tooltip .tooltipText {
-  visibility: hidden;
-  width: 300px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 10px;
-  position: absolute;
-  z-index: 1;
-  top: -25px;
-  left: 110%;
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* adjust as needed */
+  height: 50px; /* adjust as needed */
+  border: 1px solid #000; /* adjust as needed */
+  font-size: 20px; /* adjust as needed */
+  cursor: pointer;
 }
 
-.tooltip .tooltipText::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent black transparent transparent;
-}
-.tooltip:hover .tooltipText {
-  visibility: visible;
+.white {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
-.wordleForm {
-  margin-bottom: 2rem;
-  padding-left: 6rem;
-  width: 24rem;
+.green {
+  background-color: #008000;
+  color: #FFFFFF;
 }
 
-.formInput {
-  margin-bottom: 1rem;
+.yellow {
+  background-color: #FFFF00;
+  color: #000000;
 }
 
-.potentialWords {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(5, 1fr);
-  text-transform: uppercase;
-  margin-bottom: 2rem;
+.gray {
+  background-color: #808080;
+  color: #FFFFFF;
 }
 
-.potentialWord {
-  display: contents;
-}
-
-.potentialWord .letter {
-  text-align: center;
-  justify-self: middle;
-  line-height: 4rem;
-  font-size: 2rem;
-  width: 4rem;
-  font-weight: bold;
-  vertical-align: middle;
-  box-sizing: border-box;
-  color: #ffffff;
-  background-color: #6aaa64;
+.button {
+  padding: 10px 20px; /* adjust as needed */
+  font-size: 20px; /* adjust as needed */
+  cursor: pointer;
 }
